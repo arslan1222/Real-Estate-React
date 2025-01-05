@@ -7,7 +7,8 @@ const Footer = () => {
       <div className='container flex flex-col mx-auto md:flex-row justify-between items-start'>
             <div className='w-full md:w-1/3 mb-8 md:mb-0'>
                 <img src={assets.logo_dark} alt="" />
-                <p className='text-gray-400 mt-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel impedit magni ullam, at perferendis aut.</p>
+                <p className='text-gray-400 mt-4'>Discover your dream property with ease. We're dedicated to helping you find the perfect home or investment opportunity.
+                </p>
             </div>
 
 
@@ -23,7 +24,8 @@ const Footer = () => {
 
             <div className='w-full md:w-1/3'>
             <h3 className='text-white text-lg font-bold mb-4'>Subscribe To Our Newsletter</h3>
-            <p className='text-gray-400 mb-4 max-w-80'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquid?</p>
+            <p className='text-gray-400 mb-4 max-w-80'>Stay updated with the latest listings, market trends, and exclusive deals. Subscribe to our newsletter today!
+            </p>
             <div className='flex gap-2'>
                 <input className='p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:outline-none w-full md:w-auto' type="email" placeholder='Enter your email' />
                 <button className='px-4 py-2 text-white rounded bg-blue-500'>Subscribe</button>
