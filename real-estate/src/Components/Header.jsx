@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
+import { motion } from "motion/react"
 
 const Header = () => {
   return (
@@ -8,9 +8,15 @@ const Header = () => {
       style={{ backgroundImage: "url(/header_img.png)" }}
       id="Header"
     >
-      <div className="container text-center mx-auto px-4 sm:px-6 lg:px-12 text-white">
+      <motion.div
+      initial={{opacity: 0, y: 100}}
+      transition={{duration: 1.5}}
+      whileInView={{opacity: 1, y: 0}}
+      viewport={{once: true}}
+      
+      className="container text-center mx-auto px-4 sm:px-6 lg:px-12 text-white">
         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[82px] leading-tight sm:leading-snug md:leading-normal font-semibold pt-12 sm:pt-16 md:pt-20">
-          Explore homes that fit your dreams
+          Explore homes that <br /> fit your dreams
         </h2>
         <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-6 space-y-4 sm:space-y-0 mt-10 sm:mt-16">
           <a
@@ -26,7 +32,7 @@ const Header = () => {
             Contact Us
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
