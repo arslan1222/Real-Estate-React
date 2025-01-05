@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import About from './Components/About'
 import Navbar from './Components/Navbar'
 import Projects from './Components/Projects'
+import Testimonials from './Components/Testimonials'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Header />
         <About />
         <Projects />
+        <Testimonials />
     </div>
   )
 }
